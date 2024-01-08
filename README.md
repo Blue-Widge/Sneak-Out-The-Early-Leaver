@@ -2,91 +2,124 @@
 
 
 
-## Getting started
+#### Baudoin Thomas  - Lemaire Yann
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+##### 4A ESIEA LAVAL | 2023 - 2024
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+# Shooter VR
 
-## Add your files
+### TP PROGRAMMATION DÉDIÉE RV
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
 
-```
-cd existing_repo
-git remote add origin https://gitlab.esiea.fr/ylemaire/shootervr.git
-git branch -M main
-git push -uf origin main
-```
+## Introduction
 
-## Integrate with your tools
+Le but du projet est de développer une expérience VR courte, de type Shooter.
 
-- [ ] [Set up project integrations](https://gitlab.esiea.fr/ylemaire/shootervr/-/settings/integrations)
+Pour des références, vous pouvez vous renseigner sur internet. Des classiques du genre sont :
 
-## Collaborate with your team
+- Super Hot
+- Pistol Whip
+- The Lab
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+Le sujet suivant se présente comme un cahier des charges des fonctionnalités minimales attendues. L’objectif
+de ce projet réside surtout dans le développement d’un gameplay en VR.
 
-## Test and Deploy
+Vous trouverez tout de même des modèles 3D sur l’Asset Store, ou dans les ressources ci-dessous ou pourrez
+simplement utiliser les primitives d’Unity. L’usage de plugin ou de librairies de code C# de l’Asset Store est
+cependant prohibé.
 
-Use the built-in continuous integration in GitLab.
+Quoi qu’il en soit l’ensemble des éléments de votre projet qui ne sont pas produit durant le temps du TP
+(modèles 3D, sons, ...) devront être crédités lors du rendu du projet.
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
 
-***
+## Modalités
 
-# Editing this README
+Voici les modalités :
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+- Ce projet est à réaliser en binôme
+- Ce projet devra être fait avec **Unity 202 1 .3. 33 f1** avec le Default Renderer ou URP
+- Ce projet devra être fait pour la plateforme Oculus VR, sur PC
+- Ce projet sera à rendre le **mercredi 10 janvier à 16h**
+- Ce projet devra être rendu par e-mail, à l’adresse **antoine.cherel@ext.esiea.fr**
+    o En objet : NOM1 Prénom1 – NOM2 Prénom
+    o Dans le contenu du mail :
+       ▪ Le nom de votre Jeu
+       ▪ Une très brève description
+       ▪ Un lien vers le projet sous Git (GitHub, GitLab...) en **public** ou en **non-répertorié**
+       ▪ Vos crédits
+       ▪ Vos noms & prénoms à nouveau
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+## Ressources
 
-## Name
-Choose a self-explaining name for your project.
+#### Modèles 3D
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+- https://kenney.nl/assets/category:3D?sort=update
+- https://kaylousberg.com/game-assets
+- https://quaternius.com/index.html
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+#### Sons
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+- https://freesound.org/ (besoin de créer un compte gratuitement)
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+#### Musiques
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+- https://filmmusic.io/ (besoin de créer un compte gratuitement)
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+## Sujet minimum
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+L’objectif est donc de développer un Shooter en VR. Vous êtes totalement libre dans votre développement
+mais le projet devra contenir une liste de contraintes techniques, à savoir :
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+### Un menu Démarrer
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+Votre projet sera composé d’au moins deux scènes, un menu démarrer et la scène de jeu. Pour la scène de
+démarrage, vous devez utiliser le XR UI Canvas pour faire un menu de lancement du jeu. Vous pouvez aussi
+profiter de cette scène pour créditer les éléments dont vous vous êtes servis.
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+### Des déplacements dans la scène
 
-## License
-For open source projects, say how it is licensed.
+Vous devrez choisir un système de locomotion dans la scène. Vous pourrez choisir entre les différents
+systèmes vus en cours, ou une combinaison d’entre eux.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+### Un objet interactif
+
+Vous devrez ajouter la possibilité d’utiliser des équipements interactifs comme des arcs, lampes torche,
+pistolets, spray, télécommande, ...
+
+### L’ajout d’objets préhensibles
+
+Plusieurs objets devront être "interactif" dans votre scène. A vous d’imaginer la meilleure façon de les mettre
+à contribution (ou pas) dans votre expérience.
+
+Par exemple : des chargeurs, des flèches, des batteries, des armes de jets, des boites de conserve, etc...
+
+### La Gestion du Game Over et du Score
+
+Votre projet étant un Shooter, il doit comporter un système de score, à afficher en World Space, dans le
+monde, ou sur une arme ou dans le champ de vision du joueur. Le jeu doit aussi avoir une fin, que ça soit un
+timer, un nombre de vie, etc...
+
+La durée de vie du jeu ne devrait pas excéder quelques minutes.
+
+
+## Contenu bonus
+
+En plus du sujet de base, une fois celui-ci fini (ou presque), n’hésitez pas à ajouter des fonctionnalités
+supplémentaires afin de rendre votre jeu plus intéressant. Voici quelques exemples de fonctionnalités qui
+seront valorisées.
+
+### Du Son
+
+Vous pourrez rajouter du son lors d’interactions, une musique d’ambiance, une voix off.
+
+### Des VFX
+
+Vous pourrez rajouter des effets visuels lors d’interactions, des animations ou des effets de particules.
+
+### Un Scénario plus poussé
+
+Vous pourrez imaginer un scénario plus développé autour de votre jeu. Qu’on comprenne mieux sur quoi et
+pourquoi on tire.
+
+
