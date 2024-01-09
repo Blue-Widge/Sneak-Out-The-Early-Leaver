@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -495,7 +495,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 189087174}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 2
+  m_Radius: 0.5
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -507,7 +507,7 @@ NavMeshAgent:
   m_Height: 2
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 2
+  m_ObstacleAvoidanceType: 3
 --- !u!1 &389258931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,12 +1573,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06eab09ff86959d4b91fd3764f4312c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_entityAgent: {fileID: 0}
-  m_waypointsContainer: {fileID: 0}
+  m_entityAgent: {fileID: 189087180}
+  m_waypointsContainer: {fileID: 1387797369}
   m_waypoints: []
   m_waypointsNb: 0
-  m_destinationIndex: 0
-  m_sleepOnWayPoint: 0
-  m_waitingTime: 0
-  m_backAndForth: 0
+  m_destinationIndex: 2
+  m_sleepOnWayPoint: 1
+  m_waitingTime: 2
+  m_backAndForth: 1
   m_isGoingBack: 0
