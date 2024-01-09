@@ -10,6 +10,8 @@ public class EnemyPathing : MonoBehaviour
     public NavMeshAgent m_entityAgent;
     //The waypoints are in order of travelling
     public Transform m_waypointsContainer;
+    //Animator of the entity walking if existing
+    public Animator m_entityAnimator;
     //Contains all the waypoints
     [SerializeField]
     private List<Transform> m_waypoints;
@@ -41,7 +43,9 @@ public class EnemyPathing : MonoBehaviour
             this.enabled = false;
             return;
         }
-        
+
+        if (!m_entityAnimator)
+            m_entityAnimator = GetComponentInChildren<Animator>();
         m_waypoints = new List<Transform>();
         if (!m_waypointsContainer)
             m_waypointsContainer = GameObject.FindWithTag($"EntityPathWaypoint").transform.parent;
@@ -61,6 +65,8 @@ public class EnemyPathing : MonoBehaviour
             return;
 
         m_isWaiting = true;
+        if (m_entityAnimator)
+            m_entityAnimator.SetBool("Walking", false);
     }
 
     IEnumerator HandleWaypointReached()
@@ -88,6 +94,8 @@ public class EnemyPathing : MonoBehaviour
                     m_entityAgent.SetDestination(m_waypoints[m_destinationIndex].transform.position);
                 }
                 m_isWaiting = false;
+                if (m_entityAnimator)
+                    m_entityAnimator.SetBool("Walking", true);
             }
 
             yield return null;
