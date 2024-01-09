@@ -44,10 +44,8 @@ public class FieldOfView : MonoBehaviour
         Transform targetTransform = rangeChecks[0].transform;
         Vector3 toTargetDirection = (targetTransform.position - m_eyePosition.position).normalized;
         var angle = Vector3.Angle(transform.forward, toTargetDirection);
-        Debug.Log("Angle : " + angle + " TargetDirection : " + toTargetDirection);
         if (angle > (m_viewAngle / 2))
         {
-            Debug.Log("target is out of view by angle");
             m_targetDetected = false;
             return;
         }
