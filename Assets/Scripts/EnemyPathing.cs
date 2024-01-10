@@ -60,6 +60,9 @@ public class EnemyPathing : MonoBehaviour
     }
     void Update()
     {
+        if (m_entityAnimator)
+            m_entityAnimator.SetFloat("WalkingSpeed", m_entityAgent.velocity.magnitude);
+
         var distance = Vector3.Distance(m_entityAgent.transform.position, m_waypoints[m_destinationIndex].position);
         if (distance > m_distanceThreshold)
             return;

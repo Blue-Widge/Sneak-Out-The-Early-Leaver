@@ -4,7 +4,7 @@ using UnityEngine;
 using Unity.UI;
 using UnityEngine.SceneManagement;
 
-public class StartMenu : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
     public LayerMask layerMask;
 
