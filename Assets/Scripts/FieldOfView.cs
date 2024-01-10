@@ -21,12 +21,12 @@ public class FieldOfView : MonoBehaviour
     //Radius of detection
     public float m_viewRadius;
     //Serialized bool to see in the editor if the target is detected
-    [SerializeField] private bool m_targetDetected = false;
+    [FormerlySerializedAs("m_targetDetected")]
+    [SerializeField] private bool m_hasDetectedTarget = false;
     //In case the entity isn't able 
     [SerializeField] private bool m_canDetectTarget = true;
-    //Functions to execute once target detected
-    public UnityEvent m_OnTargetDetectedFunctions;
-    
+    //Contain the transform of the detected target
+    Transform m_detectedTarget;
     private void Start()
     {
         if (!m_gameObject)
@@ -41,28 +41,28 @@ public class FieldOfView : MonoBehaviour
         Collider[] rangeChecks = Physics.OverlapSphere(m_eyePosition.position, m_viewRadius, m_targetLayerMask);
         if (rangeChecks.Length == 0)
         {
-            m_targetDetected = false;
+            m_hasDetectedTarget = false;
             return;
         }
-        Transform targetTransform = rangeChecks[0].transform;
-        Vector3 toTargetDirection = (targetTransform.position - m_eyePosition.position).normalized;
+        m_detectedTarget = rangeChecks[0].transform;
+        Vector3 toTargetDirection = (m_detectedTarget.position - m_eyePosition.position).normalized;
         var angle = Vector3.Angle(transform.forward, toTargetDirection);
         if (angle > (m_viewAngle / 2))
         {
-            m_targetDetected = false;
+            m_hasDetectedTarget = false;
             return;
         }
 
-        float toTargetDistance = Vector3.Distance(m_eyePosition.position, targetTransform.position);
-        m_targetDetected = !Physics.Raycast(m_eyePosition.position, toTargetDirection, toTargetDistance, m_obstructionLayerMask);
+        float toTargetDistance = Vector3.Distance(m_eyePosition.position, m_detectedTarget.position);
+        m_hasDetectedTarget = !Physics.Raycast(m_eyePosition.position, toTargetDirection, toTargetDistance, m_obstructionLayerMask);
     }
 
     private void Update()
     {
-        if (!m_targetDetected)
+        if (!m_hasDetectedTarget)
             return;
         Debug.Log("TARGET DETECTED ! ");
-        m_OnTargetDetectedFunctions.Invoke();
+        this.GetComponent<PlayerDetected>().OnPlayerDetected(m_detectedTarget);
     }
 
     IEnumerator FOVRoutine()
@@ -73,7 +73,7 @@ public class FieldOfView : MonoBehaviour
             yield return waitingTime;
             if (!m_canDetectTarget)
             {
-                m_targetDetected = false;   
+                m_hasDetectedTarget = false;   
                 continue;
             }
             DetectTarget();
