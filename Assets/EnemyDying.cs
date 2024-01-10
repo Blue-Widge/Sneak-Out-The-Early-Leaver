@@ -31,5 +31,8 @@ public class EnemyDying : MonoBehaviour
         var fieldOfView = gameObject.GetComponentInChildren<FieldOfView>();
         if (fieldOfView)
             fieldOfView.enabled = false;
+        var collider = gameObject.GetComponentInChildren<Collider>();
+        if (collider)
+            collider.enabled = false;
     }
 }
