@@ -44,6 +44,7 @@ public class FieldOfView : MonoBehaviour
             m_hasDetectedTarget = false;
             return;
         }
+        Debug.Log("Target is in range");
         m_detectedTarget = rangeChecks[0].transform;
         Vector3 toTargetDirection = (m_detectedTarget.position - m_eyePosition.position).normalized;
         var angle = Vector3.Angle(transform.forward, toTargetDirection);
@@ -52,7 +53,8 @@ public class FieldOfView : MonoBehaviour
             m_hasDetectedTarget = false;
             return;
         }
-
+        Debug.Log("Target is in angle");
+        
         float toTargetDistance = Vector3.Distance(m_eyePosition.position, m_detectedTarget.position);
         m_hasDetectedTarget = !Physics.Raycast(m_eyePosition.position, toTargetDirection, toTargetDistance, m_obstructionLayerMask);
     }
