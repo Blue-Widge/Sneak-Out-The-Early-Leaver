@@ -19,7 +19,13 @@ public class Shooting : MonoBehaviour
         Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, Mathf.Infinity, layerMask);
         if (hit.collider != null)
         {
-            Destroy(hit.collider.gameObject);
+            EnemyDying enemyDying = hit.transform.GetComponent<EnemyDying>();
+            if (!enemyDying)
+                Destroy(hit.collider.gameObject);
+            else
+            {
+                enemyDying.OnDying();
+            }
         }
 
         if (audioSource != null)

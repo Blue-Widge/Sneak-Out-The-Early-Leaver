@@ -83,7 +83,7 @@ public class EnemyPathing : MonoBehaviour
                 {
                     m_destinationIndex = (m_destinationIndex + 1) % m_waypointsNb;
                     m_entityAgent.SetDestination(m_waypoints[m_destinationIndex].transform.position);
-                    Debug.Log("Arrived at waypoint, going to index " + m_destinationIndex);
+                    //Debug.Log("Arrived at waypoint, going to index " + m_destinationIndex);
                 }
                 else
                 {
@@ -91,7 +91,7 @@ public class EnemyPathing : MonoBehaviour
                         m_isGoingBack ^= true;
 
                     m_destinationIndex = m_isGoingBack ? --m_destinationIndex : ++m_destinationIndex;
-                    Debug.Log("New destination index = " + m_destinationIndex);
+                    //Debug.Log("New destination index = " + m_destinationIndex);
                     m_entityAgent.SetDestination(m_waypoints[m_destinationIndex].transform.position);
                 }
                 m_isWaiting = false;

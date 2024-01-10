@@ -49,7 +49,6 @@ public class PlayerDetected : MonoBehaviour
             while (vignette.currentParameters.apertureSize > 0)
             {
                 vignette.currentParameters.apertureSize -= Time.deltaTime / 2f;
-                Debug.Log("vignette size : " + vignette.currentParameters.apertureSize);
                 yield return null;
             }
         }
