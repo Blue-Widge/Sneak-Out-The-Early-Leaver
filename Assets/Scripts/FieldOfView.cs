@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Serialization;
 
 public class FieldOfView : MonoBehaviour
@@ -23,7 +24,9 @@ public class FieldOfView : MonoBehaviour
     [SerializeField] private bool m_targetDetected = false;
     //In case the entity isn't able 
     [SerializeField] private bool m_canDetectTarget = true;
-    // Start is called before the first frame update
+    //Functions to execute once target detected
+    public UnityEvent m_OnTargetDetectedFunctions;
+    
     private void Start()
     {
         if (!m_gameObject)
@@ -59,6 +62,7 @@ public class FieldOfView : MonoBehaviour
         if (!m_targetDetected)
             return;
         Debug.Log("TARGET DETECTED ! ");
+        m_OnTargetDetectedFunctions.Invoke();
     }
 
     IEnumerator FOVRoutine()

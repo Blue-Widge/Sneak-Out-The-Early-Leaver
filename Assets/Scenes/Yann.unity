@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -231,6 +231,7 @@ GameObject:
   - component: {fileID: 76763702}
   - component: {fileID: 76763704}
   - component: {fileID: 76763703}
+  - component: {fileID: 76763705}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -290,6 +291,33 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &76763705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76763701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34b729f2b04f0774fa8c697a15bd0ec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 76763701}
+  m_eyePosition: {fileID: 682444193}
+  m_targetLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  m_obstructionLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  m_viewAngle: 75
+  m_viewRadius: 10
+  m_targetDetected: 0
+  m_canDetectTarget: 1
+  m_OnTargetDetectedFunctions:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &92702656 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 32185f4c9e9ffa84591166de954a2d04, type: 3}
@@ -754,6 +782,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608924871}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &682444193 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5948221573563827446, guid: 32185f4c9e9ffa84591166de954a2d04, type: 3}
+  m_PrefabInstance: {fileID: 1543928585}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &804147762
 GameObject:
   m_ObjectHideFlags: 0
