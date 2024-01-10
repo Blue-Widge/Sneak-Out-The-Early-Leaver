@@ -6,7 +6,29 @@
 
 ##### 4A ESIEA LAVAL | 2023 - 2024
 
-# Shooter VR
+# Sneak Out : The Early Leaver
+
+Le jeu est basé sur la discretion et l'infiltration. Il faut tuer les énemies avec le pistolet ou les couteaux mis à disposition dans la map. Le but est de ne pas se faire repérer si vous ne voulez revenir au spawn ! Différentes safe zones coloriées en vert sont positionnées dans les différents bureaux où les ennemies ne pourront pas vous voir. Une fois les énemies tués ou esquivés une porte ouverte marquée d'une safe zone au sol vous permettra de gagner.
+Vous pouvez intéragir avec une multitude d'objets mais seuls les couteaux et le pistolet peuvent tuer.
+
+Menu de début :
+- Bouton "Start" pour commencer le jeu
+- Bouton "Quit" pour quitter le jeu
+Menu de fin :
+- Bouton "Restart" pour recommencer une partie
+- Bouton "Quit" pour quitter le jeu
+
+Contrôles :
+- Select : prendre les objets
+- Trigger : tirer avec le pistolet
+
+Crédits :
+- https://assetstore.unity.com/packages/3d/props/voxel-office-props-127772
+- https://assetstore.unity.com/packages/3d/props/interior/door-free-pack-aferar-148411
+- https://www.youtube.com/watch?v=GnY2UdUKXs0
+- https://www.youtube.com/watch?v=rzxLd9M5yp8
+- https://quaternius.com/packs/ultimatemodularcharacters.html
+- https://kenney.nl/assets/weapon-pack
 
 ### TP PROGRAMMATION DÉDIÉE RV
 
