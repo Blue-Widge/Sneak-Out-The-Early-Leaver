@@ -33,6 +33,7 @@ Le jeu est basé sur la discrétion et l'infiltration. Il faut éliminer les enn
 - https://www.youtube.com/watch?v=rzxLd9M5yp8
 - https://quaternius.com/packs/ultimatemodularcharacters.html
 - https://kenney.nl/assets/weapon-pack
+- https://pixabay.com for footsteps sound
 
 ### TP PROGRAMMATION DÉDIÉE RV
 
