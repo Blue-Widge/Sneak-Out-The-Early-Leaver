@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8267222595190286625}
   - component: {fileID: 8267222595190286626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy System
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66,7 +66,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8267222595583221267}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wp 1
   m_TagString: EntityPathWaypoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -97,7 +97,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8267222595865221865}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: waypoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8267222596495131280}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wp 1 (2)
   m_TagString: EntityPathWaypoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -162,7 +162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8267222596500574449}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wp 1 (1)
   m_TagString: EntityPathWaypoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}

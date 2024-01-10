@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 using Vector3 = UnityEngine.Vector3;
 
 public class PlayerDetected : MonoBehaviour
@@ -12,7 +13,6 @@ public class PlayerDetected : MonoBehaviour
     public Animator m_enemyAnimator;
     public NavMeshAgent m_navMeshAgent;
     public AudioSource m_audioSource;
-    bool m_playerDetected = false;
     private void Start()
     {
         if (!m_enemyAnimator)
@@ -35,7 +35,6 @@ public class PlayerDetected : MonoBehaviour
         }
         if (m_audioSource)
             m_audioSource.Play();   
-        m_playerDetected = true;
         var playerPos = p_playerTransform.position;
         this.transform.Rotate(Vector3.up, -Vector3.Angle((playerPos - this.transform.position).normalized, playerPos));
         StartCoroutine(FadeInScene());
@@ -44,9 +43,8 @@ public class PlayerDetected : MonoBehaviour
     IEnumerator FadeInScene()
     {
         TunnelingVignetteController vignette = Camera.main.GetComponentInChildren<TunnelingVignetteController>();
-        if (vignette)
+        /*if (vignette)
         {
-            vignette.EndTunnelingVignette(vignette.locomotionVignetteProviders[0]);
             while (vignette.currentParameters.apertureSize > 0)
             {
                 vignette.currentParameters.apertureSize -= Time.deltaTime / 2f;
@@ -55,7 +53,8 @@ public class PlayerDetected : MonoBehaviour
         }
         else
             yield return new WaitForSeconds(2f);
-        
+        */
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     

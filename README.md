@@ -10,6 +10,8 @@
 
 Le jeu est basé sur la discrétion et l'infiltration. Il faut éliminer les ennemis avec le pistolet ou les couteaux mis à disposition sur la carte. L'objectif est de ne pas se faire repérer si vous ne voulez pas revenir au point de départ ! Différentes zones de sécurité, colorées en vert, sont positionnées dans les différents bureaux où les ennemis ne peuvent pas vous voir. Une fois les ennemis éliminés ou évités, une porte ouverte marquée d'une zone de sécurité au sol vous permettra de gagner. Vous pouvez interagir avec une multitude d'objets, mais seuls les couteaux et le pistolet peuvent tuer.
 
+##### Attention au son il peut être fort !
+
 ##### Menu de début :
 - Bouton "Start" pour commencer le jeu
 - Bouton "Quit" pour quitter le jeu
