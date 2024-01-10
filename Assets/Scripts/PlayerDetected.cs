@@ -46,6 +46,7 @@ public class PlayerDetected : MonoBehaviour
         TunnelingVignetteController vignette = Camera.main.GetComponentInChildren<TunnelingVignetteController>();
         if (vignette)
         {
+            vignette.EndTunnelingVignette(vignette.locomotionVignetteProviders[0]);
             while (vignette.currentParameters.apertureSize > 0)
             {
                 vignette.currentParameters.apertureSize -= Time.deltaTime / 2f;
